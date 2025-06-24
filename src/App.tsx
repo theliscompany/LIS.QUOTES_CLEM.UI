@@ -36,9 +36,9 @@ import Shipments from './pages/Shipments';
 import Tracking from './pages/Tracking';
 import ScrollToTop from './components/shared/ScrollToTop';
 import MasterDataFiles from './pages/masterdata/MasterDataFiles';
-import EditHaulage from './components/pricing/EditHaulage';
-import EditSeafreight from './components/pricing/EditSeafreight';
-import EditMiscellaneous from './components/pricing/EditMiscellaneous';
+import EditHaulage from './features/pricing/components/EditHaulage';
+import EditSeafreight from './features/pricing/components/EditSeafreight';
+import EditMiscellaneous from './features/pricing/components/EditMiscellaneous';
 
 const queryClient = new QueryClient();
 

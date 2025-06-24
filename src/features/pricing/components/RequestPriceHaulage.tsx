@@ -1,21 +1,21 @@
 import './../../App.css';
 import { useEffect, useRef, useState } from 'react';
-import { BootstrapDialogTitle, BootstrapInput, buttonCloseStyles, inputIconStyles, inputLabelStyles } from '../../utils/misc/styles';
+import { BootstrapDialogTitle, BootstrapInput, buttonCloseStyles, inputIconStyles, inputLabelStyles } from '../../../utils/misc/styles';
 import { Autocomplete, Box, Button, DialogActions, DialogContent, InputLabel, NativeSelect, Skeleton, TextField } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import { useTranslation } from 'react-i18next';
 import { enqueueSnackbar } from 'notistack';
 import StarterKit from '@tiptap/starter-kit';
 import { RichTextEditor, MenuControlsContainer, MenuSelectHeading, MenuDivider, MenuButtonBold, MenuButtonItalic, MenuButtonStrikethrough, MenuButtonOrderedList, MenuButtonBulletedList, MenuSelectTextAlign, MenuButtonEditLink, MenuButtonHorizontalRule, MenuButtonUndo, MenuButtonRedo, type RichTextEditorRef, } from 'mui-tiptap';
-import AutocompleteSearch from '../shared/AutocompleteSearch';
+import AutocompleteSearch from '../../../components/shared/AutocompleteSearch';
 import { Anchor } from '@mui/icons-material';
-import { haulageTypeOptions } from '../../utils/constants';
-import { getContactGetContacts } from '../../api/client/crm';
+import { haulageTypeOptions } from '../../../utils/constants';
+import { getContactGetContacts } from '../../../api/client/crm';
 import { getApiHaulageHaulages } from '../../api/client/pricing';
-import { getApiTemplate, getApiTemplateById } from '../../api/client/template';
-import PortAutocomplete from '../shared/PortAutocomplete';
+import { getApiTemplate, getApiTemplateById } from '../../../api/client/template';
+import PortAutocomplete from '../../../components/shared/PortAutocomplete';
 import { useAccount, useMsal } from '@azure/msal-react';
-import { postApiEmail } from '../../api/client/quote';
+import { postApiEmail } from '../../../api/client/quote';
 
 const defaultTemplate = "658e7e0d27587b09811c13ca";
 

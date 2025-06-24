@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './../../App.css';
-import { BootstrapDialogTitle, BootstrapInput, buttonCloseStyles, datetimeStyles, inputIconStyles, inputLabelStyles, whiteButtonStyles } from '../../utils/misc/styles';
+import { BootstrapDialogTitle, BootstrapInput, buttonCloseStyles, datetimeStyles, inputIconStyles, inputLabelStyles, whiteButtonStyles } from '../../../utils/misc/styles';
 import { Alert, Autocomplete, Box, Button, DialogActions, DialogContent, IconButton, InputLabel, ListItem, ListItemText, NativeSelect, Skeleton, TextField } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import { useTranslation } from 'react-i18next';
@@ -12,13 +12,13 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { Anchor } from '@mui/icons-material';
 import StarterKit from '@tiptap/starter-kit';
 import { RichTextEditor, MenuControlsContainer, MenuSelectHeading, MenuDivider, MenuButtonBold, MenuButtonItalic, MenuButtonStrikethrough, MenuButtonOrderedList, MenuButtonBulletedList, MenuSelectTextAlign, MenuButtonEditLink, MenuButtonHorizontalRule, MenuButtonUndo, MenuButtonRedo, type RichTextEditorRef, } from 'mui-tiptap';
-import { validateObjectHSCODEFormat } from '../../utils/functions';
-import { getContactGetContacts } from '../../api/client/crm';
+import { validateObjectHSCODEFormat } from '../../../utils/functions';
+import { getContactGetContacts } from '../../../api/client/crm';
 import { getApiSeaFreightGetSeaFreights } from '../../api/client/pricing';
-import { getApiTemplate, getApiTemplateById } from '../../api/client/template';
-import PortAutocomplete from '../shared/PortAutocomplete';
+import { getApiTemplate, getApiTemplateById } from '../../../api/client/template';
+import PortAutocomplete from '../../../components/shared/PortAutocomplete';
 import { useAccount, useMsal } from '@azure/msal-react';
-import { postApiEmail } from '../../api/client/quote';
+import { postApiEmail } from '../../../api/client/quote';
 
 function displayContainers(value: any) {
     var aux = value.map((elm: any) => '<li>'+elm.quantity+"x"+elm.container+'</li>').join('');

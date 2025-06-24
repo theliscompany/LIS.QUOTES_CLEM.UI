@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BootstrapDialog, BootstrapDialogTitle, BootstrapInput, actionButtonStyles, buttonCloseStyles, datetimeStyles, inputIconStyles, inputLabelStyles } from '../../utils/misc/styles';
+import { BootstrapDialog, BootstrapDialogTitle, BootstrapInput, actionButtonStyles, buttonCloseStyles, datetimeStyles, inputIconStyles, inputLabelStyles } from '../../../utils/misc/styles';
 import { Autocomplete, Button, DialogActions, DialogContent, InputLabel, NativeSelect, Skeleton, TextField, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import { useTranslation } from 'react-i18next';
@@ -7,15 +7,15 @@ import { enqueueSnackbar } from 'notistack';
 import { Anchor } from '@mui/icons-material';
 import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { currencyOptions } from '../../utils/constants';
-import CompanySearch from '../shared/CompanySearch';
+import { currencyOptions } from '../../../utils/constants';
+import CompanySearch from '../../../components/shared/CompanySearch';
 import { Dayjs } from 'dayjs';
 import ServicesTable from './ServicesTable';
-import NewContact from '../shared/NewContact';
-import NewPort from '../shared/NewPort';
-import NewService from '../shared/NewService';
-import { getService } from '../../api/client/transport';
-import PortAutocomplete from '../shared/PortAutocomplete';
+import NewContact from '../../../components/shared/NewContact';
+import NewPort from '../../../components/shared/NewPort';
+import NewService from '../../../components/shared/NewService';
+import { getService } from '../../../api/client/transport';
+import PortAutocomplete from '../../../components/shared/PortAutocomplete';
 
 const NewSeafreight = (props: any) => {
     //const [services, setServices] = useState<any>(null);

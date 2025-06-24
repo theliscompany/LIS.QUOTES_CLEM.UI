@@ -6,7 +6,7 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { deleteApiHaulageDeleteHaulageMutation, getApiHaulageHaulagesOptions, getApiHaulageHaulagesQueryKey } from '../../../api/client/pricing/@tanstack/react-query.gen';
 import EditableTable from '../../../components/common/EditableTable';
 import { HaulageGridGetViewModel, HaulageSupplierViewModel } from '../../../api/client/pricing';
-import OffersHauliers from '../../../components/pricing/OffersHauliers';
+import OffersHauliers from '../components/OffersHauliers';
 import { useConfirmDialog } from '../../../hooks/useConfirmDialog';
 import { showSnackbar } from '../../../components/common/Snackbar';
 import { Link } from 'react-router-dom';

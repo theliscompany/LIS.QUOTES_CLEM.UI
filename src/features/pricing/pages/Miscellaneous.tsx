@@ -10,7 +10,7 @@ import { ColumnDef, createColumnHelper } from "@tanstack/react-table";
 import IconButton from "@mui/material/IconButton";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import ChevronRight from "@mui/icons-material/ChevronRight";
-import OffersMiscellaneous from "../../../components/pricing/OffersMiscellaneous";
+import OffersMiscellaneous from "../components/OffersMiscellaneous";
 import { GroupedMiscellaneousViewModel, MiscellaneousBaseViewModel } from "../../../api/client/pricing";
 import { deleteApiMiscellaneousDeleteMiscellaneousMutation, getApiMiscellaneousMiscellaneousOptions, getApiMiscellaneousMiscellaneousQueryKey } from "../../../api/client/pricing/@tanstack/react-query.gen";
 import Typography from "@mui/material/Typography";

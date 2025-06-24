@@ -1,8 +1,8 @@
 import { ColumnDef, createColumnHelper } from "@tanstack/react-table";
 import { HaulageGridGetViewModel, HaulageSupplierViewModel } from "../../api/client/pricing";
 import { Checkbox, Chip, Stack } from "@mui/material";
-import EditableTable from "../common/EditableTable";
-import { Currency } from "../../utils/constants";
+import EditableTable from "../../../components/common/EditableTable";
+import { Currency } from "../../../utils/constants";
 import { Link } from "react-router-dom";
 
 const columnHelper = createColumnHelper<HaulageSupplierViewModel>()

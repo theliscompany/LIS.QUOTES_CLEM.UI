@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BootstrapDialog, BootstrapDialogTitle, BootstrapInput, actionButtonStyles, buttonCloseStyles, datetimeStyles, inputIconStyles, inputLabelStyles } from '../../utils/misc/styles';
+import { BootstrapDialog, BootstrapDialogTitle, BootstrapInput, actionButtonStyles, buttonCloseStyles, datetimeStyles, inputIconStyles, inputLabelStyles } from '../../../utils/misc/styles';
 import { Autocomplete, Button, DialogActions, DialogContent, InputLabel, NativeSelect, Skeleton, TextField, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import { useTranslation } from 'react-i18next';
@@ -7,11 +7,11 @@ import { enqueueSnackbar } from 'notistack';
 import { Anchor } from '@mui/icons-material';
 import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { currencyOptions, haulageTypeOptions } from '../../utils/constants';
-import NewContact from '../shared/NewContact';
-import AutocompleteSearch from '../shared/AutocompleteSearch';
-import CompanySearch from '../shared/CompanySearch';
-import PortAutocomplete from '../shared/PortAutocomplete';
+import { currencyOptions, haulageTypeOptions } from '../../../utils/constants';
+import NewContact from '../../../components/shared/NewContact';
+import AutocompleteSearch from '../../../components/shared/AutocompleteSearch';
+import CompanySearch from '../../../components/shared/CompanySearch';
+import PortAutocomplete from '../../../components/shared/PortAutocomplete';
 import { Dayjs } from 'dayjs';
 
 function NewHaulage(props: any) {

@@ -1,6 +1,6 @@
 import { ColumnDef, createColumnHelper } from "@tanstack/react-table"
 import { SeaFreightsViewModel, SupplierSeaFreightViewModel } from "../../api/client/pricing"
-import EditableTable from "../common/EditableTable"
+import EditableTable from "../../../components/common/EditableTable"
 import Checkbox from "@mui/material/Checkbox"
 import { Link } from "react-router-dom"
 

@@ -21,7 +21,7 @@ import {
     GridRenderCellParams,
 } from '@mui/x-data-grid';
 import { randomId } from '@mui/x-data-grid-generator';
-import { gridStyles, whiteButtonStyles } from '../../utils/misc/styles';
+import { gridStyles, whiteButtonStyles } from '../../../utils/misc/styles';
 import { Typography } from '@mui/material';
 import { t } from 'i18next';
 

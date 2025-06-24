@@ -1,6 +1,6 @@
 import { ColumnDef, createColumnHelper } from "@tanstack/react-table"
 import { GroupedMiscellaneousViewModel, MiscellaneousBaseViewModel } from "../../api/client/pricing"
-import EditableTable from "../common/EditableTable"
+import EditableTable from "../../../components/common/EditableTable"
 import { CheckCircle } from "@mui/icons-material"
 import Checkbox from "@mui/material/Checkbox"
 import { Link } from "react-router-dom"

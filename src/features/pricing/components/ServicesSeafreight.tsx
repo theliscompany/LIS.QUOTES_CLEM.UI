@@ -1,13 +1,13 @@
 import { ColumnDef, createColumnHelper, isNumberArray } from "@tanstack/react-table"
-import EditableTable from "../common/EditableTable"
+import EditableTable from "../../../components/common/EditableTable"
 import { Alert, Box, Button, ButtonGroup, Checkbox, Chip, FormControl, IconButton, ListItemText, MenuItem, OutlinedInput, Paper, Select, SelectChangeEvent, Stack, TextField } from "@mui/material"
 import { AddCircle, Cancel, Check, DeleteForever } from "@mui/icons-material"
 import { useQuery } from "@tanstack/react-query"
-import { getPackageOptions, getServiceOptions } from "../../api/client/masterdata/@tanstack/react-query.gen"
+import { getPackageOptions, getServiceOptions } from "../../../api/client/masterdata/@tanstack/react-query.gen"
 import { ChangeEvent, useEffect, useRef, useState } from "react"
 import { ServiceSeaFreightViewModel } from "../../api/client/pricing"
-import { Currency } from "../../utils/constants"
-import { useConfirmDialog } from "../../hooks/useConfirmDialog"
+import { Currency } from "../../../utils/constants"
+import { useConfirmDialog } from "../../../hooks/useConfirmDialog"
 
 interface ServicesSeafreightProps {
     currency: string,
