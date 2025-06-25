@@ -1,9 +1,9 @@
 import { Autocomplete, Breadcrumbs, Button, Divider, FormControl, InputLabel, MenuItem, Paper, Select, SelectChangeEvent, Stack, TextField, Typography } from "@mui/material"
 import Grid from '@mui/material/Grid2'
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
-import { getApiSeaFreightGetSeaFreightsQueryKey, getApiSeaFreightSeaFreightByIdOptions, postApiSeaFreightSeaFreightMutation, putApiSeaFreightSeaFreightByIdMutation } from "../../api/client/pricing/@tanstack/react-query.gen"
+import { getApiSeaFreightGetSeaFreightsQueryKey, getApiSeaFreightSeaFreightByIdOptions, postApiSeaFreightSeaFreightMutation, putApiSeaFreightSeaFreightByIdMutation } from "../../../api/client/pricing/@tanstack/react-query.gen"
 import { ChangeEvent, useCallback, useEffect, useState } from "react"
-import { SeaFreightViewModel, ServiceSeaFreightViewModel } from "../../api/client/pricing"
+import { SeaFreightViewModel, ServiceSeaFreightViewModel } from "../../../api/client/pricing"
 import { getPortOptions } from "../../../api/client/masterdata/@tanstack/react-query.gen"
 import { PortViewModel } from "../../../api/client/masterdata"
 import { currencyOptions } from "../../../utils/constants"
